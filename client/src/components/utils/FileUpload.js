@@ -26,6 +26,11 @@ function FileUpload() {
 
   const deleteHandler = (image) => {
     const currentIndex = Images.indexOf(image);
+
+    let newImages = [...Images];
+    newImages.splice(currentIndex, 1);
+
+    setImages(newImages);
   };
 
   return (
