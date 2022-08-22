@@ -26,7 +26,6 @@ router.post("/image", (req, res) => {
       success: true,
 
       filePath: res.req.file.path,
-
       fileName: res.req.file.filename,
     });
   });
